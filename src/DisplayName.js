@@ -48,9 +48,11 @@ export const DisplayName = () => {
         <br />
         <button type="submit">submit</button>
       </form>
-      <p style={{ display: fullname !== "" ? "block" : "none" }}>
-        Full Name: {firstname} {lastname}{" "}
-      </p>
+      {fullname && (
+        <p>
+          Full Name: {fullname}
+        </p>
+      )}
     </div>
   );
 };
