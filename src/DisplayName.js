@@ -23,7 +23,7 @@ export const DisplayName = () => {
           name="firstname"
           value={firstname}
           width={"100px"}
-          onChange={(e) => setFirstname(e.target.value)}
+          onChange={(e) => {setFirstname(e.target.value);setFullName("")}}
           required
         />
         <br />
@@ -33,7 +33,7 @@ export const DisplayName = () => {
           id="lastname"
           name="lastname"
           value={lastname}
-          onChange={(e) => setLastname(e.target.value)}
+          onChange={(e) => {setLastname(e.target.value);setFullName("")}}
           required
         />
         <br />
